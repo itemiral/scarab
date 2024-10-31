@@ -1,0 +1,614 @@
+/* -*- Mode: c -*- */
+####################################################################################################
+Core 0
+####################################################################################################
+Cumulative:        Cycles: 30182141              Instructions: 20000000              IPC: 0.66264
+
+Periodic:          Cycles: 14977622              Instructions: 9999996               IPC: 0.66766
+
+EXECUTION_TIME                           4680506875000                  9431919062500              
+
+NODE_CYCLE                                    14977622                       30182141              
+
+NODE_INST_COUNT                                9999996                       20000000              
+
+NODE_INST_COUNT_FETCHED                        9999996                       20000000              
+
+NODE_UOP_COUNT                                12290817                       24591565              
+
+FULL_WINDOW_STALL                              4576993       30.559%          9383969       31.091%
+
+FULL_WINDOW_MEM_OP                             4249053       99.997%          8741784       99.997%
+FULL_WINDOW_FP_OP                                    0        0.000%                0        0.000%
+FULL_WINDOW_OTHER_OP                               107        0.003%              275        0.003%
+                                               4249160      100.000%          8742059      100.000%
+                                                  0.00         0.01              0.00         0.01
+
+RET_BLOCKED_DC_MISS                            7743134       51.698%         15714630       52.066%
+
+RET_BLOCKED_L1_MISS                            3336018       22.273%          7077267       23.449%
+
+RET_BLOCKED_L1_MISS_BW_PREF                          0        0.000%                0        0.000%
+
+RET_BLOCKED_L1_ACCESS                          4407193       29.425%          8637579       28.618%
+
+RET_BLOCKED_MEM_STALL                          3336018       22.273%          7077267       23.449%
+
+RET_BLOCKED_OFFCHIP_DEMAND                           0        0.000%                0        0.000%
+
+OP_ISSUED                                     35627380                       71005608              
+
+OP_RETIRED                                    12290817                       24591565              
+
+REPLAY_SIGNALED                                      0                              0              
+
+REPLAY_COUNTED                                       0                              0              
+
+OFF_CRITICAL_PATH                                    0         -nan%                0         -nan%
+ON_CRITICAL_PATH                                     0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
+
+LD_NO_DEPENDENTS                                 23863        0.736%            47709        0.737%
+LD_DEPENDENTS                                  3216961       99.264%          6427261       99.263%
+                                               3240824      100.000%          6474970      100.000%
+                                                  0.99         0.99              0.99         0.99
+
+LD_EXEC_CYCLES_0                                     0        0.000%                0        0.000%
+LD_EXEC_CYCLES_1                                     0        0.000%                0        0.000%
+LD_EXEC_CYCLES_2                                     0        0.000%                0        0.000%
+LD_EXEC_CYCLES_3                                  1016       75.092%             2059       77.174%
+LD_EXEC_CYCLES_4                                   337       24.908%              609       22.826%
+                                                  1353      100.000%             2668      100.000%
+                                                  3.25         1.68              3.23         1.60
+
+ICACHE_STAGE_STARVED                                21        0.001%             3390        0.057%
+ICACHE_STAGE_NOT_STARVED                       2989762       99.999%          5980380       99.943%
+                                               2989783      100.000%          5983770      100.000%
+                                                  1.00         1.00              1.00         1.00
+
+ICACHE_STAGE_STALLED                            137609        0.919%           294020        0.974%
+ICACHE_STAGE_NOT_STALLED                       2989783       19.962%          5982090       19.820%
+ICACHE_STAGE_OFF_PATH                         11850230       79.120%         23906031       79.206%
+                                              14977622      100.000%         30182141      100.000%
+                                                  1.78         1.63              1.78         1.64
+
+DECODE_STAGE_STARVED                          13045680       98.260%         26198807       98.238%
+DECODE_STAGE_NOT_STARVED                        231030        1.740%           469778        1.762%
+                                              13276710      100.000%         26668585      100.000%
+                                                  0.02         0.13              0.02         0.13
+
+DECODE_STAGE_STALLED                               140        0.001%             3012        0.010%
+DECODE_STAGE_NOT_STALLED                      13276570       88.643%         26665573       88.349%
+DECODE_STAGE_OFF_PATH                          1700912       11.356%          3513556       11.641%
+                                              14977622      100.000%         30182141      100.000%
+                                                  1.11         0.49              1.12         0.50
+
+UOPQ_STAGE_STARVED                             7313748       91.786%         14530135       91.646%
+UOPQ_STAGE_NOT_STARVED                          654485        8.214%          1324497        8.354%
+                                               7968233      100.000%         15854632      100.000%
+                                                  0.08         0.26              0.08         0.27
+
+UOPQ_STAGE_STALLED                              140175        0.936%           297686        0.986%
+UOPQ_STAGE_NOT_STALLED                         7968233       53.201%         15854632       52.530%
+UOPQ_STAGE_OFF_PATH                            6869214       45.863%         14029823       46.484%
+                                              14977622      100.000%         30182141      100.000%
+                                                  1.45         1.10              1.45         1.11
+
+MAP_STAGE_STARVED                               615072       15.162%          1249329       15.325%
+MAP_STAGE_NOT_STARVED                          3441581       84.838%          6902836       84.675%
+                                               4056653      100.000%          8152165      100.000%
+                                                  0.85         0.79              0.85         0.79
+
+MAP_STAGE_STALLED                               150839        1.007%           319567        1.059%
+MAP_STAGE_NOT_STALLED                          3905814       26.078%          7832598       25.951%
+MAP_STAGE_OFF_PATH                            10920969       72.915%         22029976       72.990%
+                                              14977622      100.000%         30182141      100.000%
+                                                  1.72         1.53              1.72         1.53
+
+EXEC_STAGE_STARVED                             5331161       35.594%         10729286       35.548%
+EXEC_STAGE_NOT_STARVED                          158802        1.060%           314753        1.043%
+EXEC_STAGE_OFF_PATH                            9487659       63.346%         19138102       63.409%
+                                              14977622      100.000%         30182141      100.000%
+                                                  1.28         1.17              1.28         1.17
+
+FU_BUSY_0                                      7650180                       15303244              
+
+FU_BUSY_1                                      4214050                        8440457              
+
+FU_BUSY_2                                      4655412                        9251585              
+
+FU_BUSY_3                                      3958476                        7851467              
+
+FU_BUSY_4                                      2368765                        4744885              
+
+FU_BUSY_5                                      2962856                        5923811              
+
+FU_BUSY_6                                      1173602                        2346507              
+
+FU_BUSY_7                                      1439353                        2872871              
+
+FU_BUSY_8                                            0                              0              
+
+FU_BUSY_9                                            0                              0              
+
+FU_BUSY_10                                           0                              0              
+
+FU_BUSY_11                                           0                              0              
+
+FU_BUSY_12                                           0                              0              
+
+FU_BUSY_13                                           0                              0              
+
+FU_BUSY_14                                           0                              0              
+
+FU_BUSY_15                                           0                              0              
+
+FU_BUSY_16                                           0                              0              
+
+FU_BUSY_17                                           0                              0              
+
+FU_BUSY_18                                           0                              0              
+
+FU_BUSY_19                                           0                              0              
+
+FU_BUSY_20                                           0                              0              
+
+FU_BUSY_21                                           0                              0              
+
+FU_BUSY_22                                           0                              0              
+
+FU_BUSY_23                                           0                              0              
+
+FU_BUSY_24                                           0                              0              
+
+FU_BUSY_25                                           0                              0              
+
+FU_BUSY_26                                           0                              0              
+
+FU_BUSY_27                                           0                              0              
+
+FU_BUSY_28                                           0                              0              
+
+FU_BUSY_29                                           0                              0              
+
+FU_BUSY_30                                           0                              0              
+
+FU_BUSY_31                                           0                              0              
+
+FU_REJECTED_OP_INV_NOT_SIMD                          0        0.000%                0        0.000%
+FU_REJECTED_OP_NOP_NOT_SIMD                      29151       11.650%            58913       11.748%
+FU_REJECTED_OP_CF_NOT_SIMD                        2155        0.861%             4482        0.894%
+FU_REJECTED_OP_MOV_NOT_SIMD                      69060       27.600%           137739       27.466%
+FU_REJECTED_OP_CMOV_NOT_SIMD                       233        0.093%              481        0.096%
+FU_REJECTED_OP_LDA_NOT_SIMD                       7063        2.823%            13974        2.787%
+FU_REJECTED_OP_IMEM_NOT_SIMD                       181        0.072%              400        0.080%
+FU_REJECTED_OP_IADD_NOT_SIMD                     29768       11.897%            59575       11.880%
+FU_REJECTED_OP_IMUL_NOT_SIMD                     49413       19.748%            98745       19.690%
+FU_REJECTED_OP_IDIV_NOT_SIMD                      5388        2.153%            11133        2.220%
+FU_REJECTED_OP_ICMP_NOT_SIMD                        36        0.014%               91        0.018%
+FU_REJECTED_OP_LOGIC_NOT_SIMD                    17510        6.998%            34920        6.963%
+FU_REJECTED_OP_SHIFT_NOT_SIMD                    40250       16.086%            81017       16.155%
+FU_REJECTED_OP_FMEM_NOT_SIMD                        11        0.004%               19        0.004%
+FU_REJECTED_OP_FCVT_NOT_SIMD                         0        0.000%                0        0.000%
+FU_REJECTED_OP_FADD_NOT_SIMD                         0        0.000%                0        0.000%
+FU_REJECTED_OP_FMUL_NOT_SIMD                         0        0.000%                0        0.000%
+FU_REJECTED_OP_FMA_NOT_SIMD                          0        0.000%                0        0.000%
+FU_REJECTED_OP_FDIV_NOT_SIMD                         0        0.000%                0        0.000%
+FU_REJECTED_OP_FCMP_NOT_SIMD                         0        0.000%                0        0.000%
+FU_REJECTED_OP_FCMOV_NOT_SIMD                        0        0.000%                0        0.000%
+FU_REJECTED_OP_GATHER_NOT_SIMD                       0        0.000%                0        0.000%
+FU_REJECTED_OP_SCATTER_NOT_SIMD                      0        0.000%                0        0.000%
+FU_REJECTED_OP_PIPELINED_FAST_NOT_SIMD               0        0.000%                0        0.000%
+FU_REJECTED_OP_PIPELINED_MEDIUM_NOT_SIMD             0        0.000%                0        0.000%
+FU_REJECTED_OP_PIPELINED_SLOW_NOT_SIMD               0        0.000%                0        0.000%
+FU_REJECTED_OP_NOTPIPELINED_MEDIUM_NOT_SIMD             0        0.000%                0        0.000%
+FU_REJECTED_OP_NOTPIPELINED_SLOW_NOT_SIMD             0        0.000%                0        0.000%
+FU_REJECTED_OP_NOTPIPELINED_VERY_SLOW_NOT_SIMD             0        0.000%                0        0.000%
+FU_REJECTED_OP_INV_SIMD                              0        0.000%                0        0.000%
+FU_REJECTED_OP_NOP_SIMD                              0        0.000%                0        0.000%
+FU_REJECTED_OP_CF_SIMD                               0        0.000%                0        0.000%
+FU_REJECTED_OP_MOV_SIMD                              0        0.000%                0        0.000%
+FU_REJECTED_OP_CMOV_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_LDA_SIMD                              0        0.000%                0        0.000%
+FU_REJECTED_OP_IMEM_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_IADD_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_IMUL_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_IDIV_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_ICMP_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_LOGIC_SIMD                            0        0.000%                0        0.000%
+FU_REJECTED_OP_SHIFT_SIMD                            0        0.000%                0        0.000%
+FU_REJECTED_OP_FMEM_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_FCVT_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_FADD_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_FMUL_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_FMA_SIMD                              0        0.000%                0        0.000%
+FU_REJECTED_OP_FDIV_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_FCMP_SIMD                             0        0.000%                0        0.000%
+FU_REJECTED_OP_FCMOV_SIMD                            0        0.000%                0        0.000%
+FU_REJECTED_OP_GATHER_SIMD                           0        0.000%                0        0.000%
+FU_REJECTED_OP_SCATTER_SIMD                          0        0.000%                0        0.000%
+FU_REJECTED_OP_PIPELINED_FAST_SIMD                   0        0.000%                0        0.000%
+FU_REJECTED_OP_PIPELINED_MEDIUM_SIMD                 0        0.000%                0        0.000%
+FU_REJECTED_OP_PIPELINED_SLOW_SIMD                   0        0.000%                0        0.000%
+FU_REJECTED_OP_NOTPIPELINED_MEDIUM_SIMD              0        0.000%                0        0.000%
+FU_REJECTED_OP_NOTPIPELINED_SLOW_SIMD                0        0.000%                0        0.000%
+FU_REJECTED_OP_NOTPIPELINED_VERY_SLOW_SIMD             0        0.000%                0        0.000%
+                                                250219      100.000%           501489      100.000%
+                                                  6.42         3.75              6.42         3.75
+
+OP_WAIT_0                                      7187813                       14379194              
+
+OP_WAIT_1                                      4359209                        8731985              
+
+OP_WAIT_2                                       484347                         966569              
+
+OP_WAIT_3                                       139726                         278687              
+
+OP_WAIT_4                                        65345                         127442              
+
+OP_WAIT_5                                        20935                          41174              
+
+OP_WAIT_6                                         7234                          14491              
+
+OP_WAIT_7                                         4357                           8568              
+
+OP_WAIT_8                                         1754                           3533              
+
+OP_WAIT_9                                         1273                           2508              
+
+OP_WAIT_10                                        1160                           2332              
+
+OP_WAIT_11                                         820                           1673              
+
+OP_WAIT_12                                         351                            674              
+
+OP_WAIT_13                                         283                            603              
+
+OP_WAIT_14                                         517                           1104              
+
+OP_WAIT_15                                         730                           1490              
+
+OP_WAIT_16                                         441                            939              
+
+OP_WAIT_17                                         324                            674              
+
+OP_WAIT_18                                         204                            415              
+
+OP_WAIT_19                                         172                            349              
+
+OP_WAIT_20                                         171                            305              
+
+OP_WAIT_21                                         107                            212              
+
+OP_WAIT_22                                          91                            198              
+
+OP_WAIT_23                                          87                            193              
+
+OP_WAIT_24                                         114                            266              
+
+OP_WAIT_25                                         121                            232              
+
+OP_WAIT_26                                          94                            210              
+
+OP_WAIT_27                                         122                            249              
+
+OP_WAIT_28                                          55                            119              
+
+OP_WAIT_29                                          64                            142              
+
+OP_WAIT_30                                         241                            497              
+
+OP_WAIT_31                                       12555                          24538              
+
+ROW_SIZE_0                                    10162238                       20557374              
+
+ROW_SIZE_1                                     1377838                        2742276              
+
+ROW_SIZE_2                                      469019                         936289              
+
+ROW_SIZE_3                                      290206                         574433              
+
+ROW_SIZE_4                                      222441                         443683              
+
+ROW_SIZE_5                                      115841                         234044              
+
+ROW_SIZE_6                                     1272559                        2551410              
+
+ROW_SIZE_7                                           0                              0              
+
+ROW_SIZE_8                                           0                              0              
+
+ROW_SIZE_9                                           0                              0              
+
+ROW_SIZE_10                                          0                              0              
+
+ROW_SIZE_11                                          0                              0              
+
+ROW_SIZE_12                                          0                              0              
+
+ROW_SIZE_13                                          0                              0              
+
+ROW_SIZE_14                                          0                              0              
+
+ROW_SIZE_15                                          0                              0              
+
+ROW_SIZE_16                                          0                              0              
+
+ROW_SIZE_17                                          0                              0              
+
+ROW_SIZE_18                                          0                              0              
+
+ROW_SIZE_19                                          0                              0              
+
+ROW_SIZE_20                                          0                              0              
+
+ROW_SIZE_21                                          0                              0              
+
+ROW_SIZE_22                                          0                              0              
+
+ROW_SIZE_23                                          0                              0              
+
+ROW_SIZE_24                                          0                              0              
+
+ROW_SIZE_25                                          0                              0              
+
+ROW_SIZE_26                                          0                              0              
+
+ROW_SIZE_27                                          0                              0              
+
+ROW_SIZE_28                                          0                              0              
+
+ROW_SIZE_29                                          0                              0              
+
+ROW_SIZE_30                                          0                              0              
+
+ROW_SIZE_31                                          0                              0              
+
+RET_OP_EXEC_COUNT_0                                  0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_1                           12290817      100.000%         24591565      100.000%
+RET_OP_EXEC_COUNT_2                                  0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_3                                  0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_4                                  0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_5                                  0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_6                                  0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_7                                  0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_8                                  0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_9                                  0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_10                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_11                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_12                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_13                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_14                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_15                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_16                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_17                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_18                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_19                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_20                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_21                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_22                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_23                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_24                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_25                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_26                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_27                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_28                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_29                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_30                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_31                                 0        0.000%                0        0.000%
+RET_OP_EXEC_COUNT_32                                 0        0.000%                0        0.000%
+                                              12290817      100.000%         24591565      100.000%
+                                                  1.00         0.00              1.00         0.00
+
+RET_STALL_LENGTH_0                            12269330       99.825%         24545555       99.813%
+RET_STALL_LENGTH_100                             20920        0.170%            44686        0.182%
+RET_STALL_LENGTH_200                               208        0.002%              601        0.002%
+RET_STALL_LENGTH_300                                14        0.000%               39        0.000%
+RET_STALL_LENGTH_400                                39        0.000%               63        0.000%
+RET_STALL_LENGTH_500                                17        0.000%               37        0.000%
+RET_STALL_LENGTH_600                                 6        0.000%                9        0.000%
+RET_STALL_LENGTH_700                                 1        0.000%                3        0.000%
+RET_STALL_LENGTH_800                                 1        0.000%                2        0.000%
+RET_STALL_LENGTH_900                                 1        0.000%                2        0.000%
+RET_STALL_LENGTH_1000                                1        0.000%                3        0.000%
+RET_STALL_LENGTH_1100                               69        0.001%              133        0.001%
+RET_STALL_LENGTH_1200                              182        0.001%              377        0.002%
+RET_STALL_LENGTH_1300                               28        0.000%               53        0.000%
+RET_STALL_LENGTH_1400                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_1500                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_1600                                0        0.000%                1        0.000%
+RET_STALL_LENGTH_1700                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_1800                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_1900                                0        0.000%                1        0.000%
+RET_STALL_LENGTH_2000                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_2100                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_2200                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_2300                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_2400                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_2500                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_2600                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_2700                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_2800                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_2900                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3000                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3100                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3200                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3300                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3400                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3500                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3600                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3700                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3800                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_3900                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4000                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4100                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4200                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4300                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4400                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4500                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4600                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4700                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4800                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_4900                                0        0.000%                0        0.000%
+RET_STALL_LENGTH_5000                                0        0.000%                0        0.000%
+                                              12290817      100.000%         24591565      100.000%
+                                                  0.00         0.07              0.00         0.07
+
+MEM_BLOCK_LENGTH_0                                   0         -nan%                1      100.000%
+MEM_BLOCK_LENGTH_100                                 0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_200                                 0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_300                                 0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_400                                 0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_500                                 0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_600                                 0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_700                                 0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_800                                 0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_900                                 0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1000                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1100                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1200                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1300                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1400                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1500                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1600                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1700                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1800                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_1900                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2000                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2100                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2200                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2300                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2400                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2500                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2600                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2700                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2800                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_2900                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3000                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3100                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3200                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3300                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3400                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3500                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3600                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3700                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3800                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_3900                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4000                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4100                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4200                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4300                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4400                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4500                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4600                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4700                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4800                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_4900                                0         -nan%                0        0.000%
+MEM_BLOCK_LENGTH_5000                                0         -nan%                0        0.000%
+                                                     0         -nan%                1      100.000%
+                                                  -nan         -nan              0.00         -nan
+
+FUS_BUSY_ON_PATH                              12599415        0.8412         25206913        0.8352
+
+FUS_BUSY_OFF_PATH                             15823279        1.0565         31527914        1.0446
+
+FU_BUSY_MEM_STALL                               134686        0.0090           267099        0.0088
+
+FUS_EMPTY                                     91398282        6.1023        184722301        6.1203
+
+FU_UNAVAILABLE                                  220462        0.0147           441929        0.0146
+
+FU_MEM_UNAVAILABLE                               29757        0.0020            59560        0.0020
+
+FU_REPLAY                                            0        0.0000                0        0.0000
+
+FU_STARVED                                    90584646        6.0480        183089527        6.0662
+
+CHIP_UTILIZATION                                     0        0.0000                0        0.0000
+
+CYCLES_UNDER_MEM_REQ                                 0                              0              
+
+CYCLES_UNDER_NO_MEM_REQ                              0                              0              
+
+CYCLES_UNDER_CRITICAL_MEM_REQ                        0                              0              
+
+CYCLES_UNDER_NONCRITICAL_MEM_REQ                     0                              0              
+
+CHIP_UTILIZATION_UNDER_MEM_REQ                       0          -nan                0          -nan
+
+CHIP_UTILIZATION_UNDER_NO_MEM_REQ                    0          -nan                0          -nan
+
+CHIP_UTILIZATION_UNDER_CRITICAL_MEM_REQ              0          -nan                0          -nan
+
+CHIP_UTILIZATION_UNDER_NONCRITICAL_MEM_REQ             0          -nan                0          -nan
+
+CYCLES_NOT_WAITING_FOR_OFF_CHIP                      0        0.0000                0        0.0000
+
+FUS_BUSY_NOT_WAITING_FOR_OFF_CHIP                    0          -nan                0          -nan
+
+CYCLES_WAITING_FOR_OFF_CHIP                          0        0.0000                0        0.0000
+
+FUS_BUSY_WAITING_FOR_OFF_CHIP                        0          -nan                0          -nan
+
+TOTAL_OFF_CHIP_DELAYS_LEFT                           0                              0              
+
+WRONG_IO_SCHED                                       0                              0              
+
+DVFS_CONFIG_SWITCH                                   0                              0              
+
+MAP_STAGE_RECEIVED_OPS_0                             0        0.000%                0        0.000%
+MAP_STAGE_RECEIVED_OPS_1                        481058       15.584%           968632       15.690%
+MAP_STAGE_RECEIVED_OPS_2                        414062       13.414%           816346       13.223%
+MAP_STAGE_RECEIVED_OPS_3                        545252       17.664%          1090013       17.656%
+MAP_STAGE_RECEIVED_OPS_4                        278131        9.010%           561127        9.089%
+MAP_STAGE_RECEIVED_OPS_5                        216993        7.030%           436234        7.066%
+MAP_STAGE_RECEIVED_OPS_6                       1151353       37.299%          2301108       37.274%
+MAP_STAGE_RECEIVED_OPS_7                             0        0.000%                0        0.000%
+MAP_STAGE_RECEIVED_OPS_8                             0        0.000%                0        0.000%
+MAP_STAGE_RECEIVED_OPS_MAX                           0        0.000%                0        0.000%
+                                               3086849      100.000%          6173460      100.000%
+                                                  3.90         1.92              3.90         1.92
+
+MAP_STAGE_WAIT_FOR_DECODE                            0         -nan%                0         -nan%
+MAP_STAGE_CONSUME_DECODE                             0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
+
+MAP_STAGE_WAIT_FOR_DECODE2                           0         -nan%                0         -nan%
+MAP_STAGE_CONSUME_DECODE2                            0         -nan%                0         -nan%
+                                                     0         -nan%                0         -nan%
+                                                  -nan         -nan              -nan         -nan
+
+FTQ_RECOVER_EXEC                                203893                         409838              
+
+FTQ_RECOVER_DECODE                                   0                             30              
+
+FTQ_OFFPATH_CYCLES                            11361427                       22817784              
+
+FTQ_CYCLES_OFFPATH                            13829292                       27871914              
+
+FTQ_CYCLES_ONPATH                              1148330                        2310227              
+
+FTQ_FETCHED_INS_OFFPATH                       78476215                      157173633              
+
+FTQ_FETCHED_INS_ONPATH                        12086806                       24181697              
+
+FTQ_BREAK_FULL_FT_ONPATH                        251667       26.648%           512132       26.950%
+FTQ_BREAK_MAX_CFS_TAKEN_ONPATH                  672070       71.163%          1347442       70.906%
+FTQ_BREAK_MAX_BYTES_ONPATH                       20674        2.189%            40758        2.145%
+FTQ_BREAK_PRED_BR_ONPATH                             0        0.000%                0        0.000%
+FTQ_BREAK_BAR_FETCH_ONPATH                           0        0.000%                0        0.000%
+                                                944411      100.000%          1900332      100.000%
+                                                  0.76         0.28              0.75         0.28
+
+FTQ_BREAK_FULL_FT_OFFPATH                     11075349       78.923%         22314817       78.902%
+FTQ_BREAK_MAX_CFS_TAKEN_OFFPATH                2771861       19.752%          5606183       19.823%
+FTQ_BREAK_MAX_BYTES_OFFPATH                     185974        1.325%           360782        1.276%
+FTQ_BREAK_PRED_BR_OFFPATH                            0        0.000%                0        0.000%
+FTQ_BREAK_BAR_FETCH_OFFPATH                          0        0.000%                0        0.000%
+                                              14033184      100.000%         28281782      100.000%
+                                                  0.22         0.40              0.22         0.40
+
+
+
