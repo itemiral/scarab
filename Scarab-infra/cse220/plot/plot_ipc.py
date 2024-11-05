@@ -4,6 +4,7 @@ import argparse
 import matplotlib.pyplot as plt
 import matplotlib
 import numpy as np
+import matplotlib.patches as mpatches
 
 matplotlib.rc('font', size=14)
 
@@ -56,12 +57,11 @@ def get_dcache(descriptor_data, sim_path, output_dir):
 
                     total_misses = compulsory + conflict + capacity
                     total_accesses = total_misses + dcache_hits
-                    if total_accesses > 0:
-                        dcache_config.append({
-                            'compulsory': compulsory / total_accesses,
-                            'conflict': conflict / total_accesses,
-                            'capacity': capacity / total_accesses
-                        })
+                    dcache_config.append({
+                        'compulsory': compulsory / total_accesses,
+                        'conflict': conflict / total_accesses,
+                        'capacity': capacity / total_accesses
+                    })
                     avg_dcache_miss_ratio['compulsory'] += compulsory / total_accesses
                     avg_dcache_miss_ratio['conflict'] += conflict / total_accesses
                     avg_dcache_miss_ratio['capacity'] += capacity / total_accesses
@@ -77,14 +77,11 @@ def get_dcache(descriptor_data, sim_path, output_dir):
             if i == len(benchmarks_groups) - 1:  
                 group_with_avg.append('Avg')
 
-            plot_data(group_with_avg if i == len(benchmarks_groups) - 1 else group, {key: dcache_miss_ratio[key][i] for key in dcache_miss_ratio}, 'Dcache Miss Ratio', f"{output_dir}/FigureB_Group{i+1}.png")
+            plot_data(group_with_avg if i == len(benchmarks_groups) - 1 else group, {key: dcache_miss_ratio[key][i] for key in dcache_miss_ratio}, 'Dcache Miss Ratio', f"{output_dir}/Dcache{i+1}.png")
 
     except Exception as e:
         print(e)
 
-import matplotlib.patches as mpatches
-
-import matplotlib.patches as mpatches
 
 def plot_data(benchmarks, data, ylabel_name, fig_name, ylim=None):
     colors = {
